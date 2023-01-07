@@ -15,6 +15,10 @@ sudo adduser rabbi sudo
 ```
 
 ```code 
+cd /home/rabbi
+```
+
+```code 
 sudo apt install nginx
 ```
 
@@ -49,11 +53,6 @@ sudo systemctl restart nginx
 ```code 
 sudo nginx -s reload
 ```
-
-```code 
-cd /home/rabbi
-```
-
 ```code 
 sudo apt install python3
 ```

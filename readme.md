@@ -15,7 +15,7 @@ sudo adduser rabbi sudo
 ```
 
 ```code 
-cd /home/rabbi
+cd /home/rabbi/foyezrabbi
 ```
 
 ```code 

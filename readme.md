@@ -1,3 +1,7 @@
+```code
+ssh root@IP_Address -p Port_Number
+```
+
 ```code 
 sudo apt update
 ```
@@ -21,10 +25,10 @@ sudo nano /etc/nginx/sites-enabled/flask_app
 ```code 
 server {
     listen 80;
-    server_name foyezrabbi.com https//www.foyezrabbi.com;
+    server_name foyezrabbi.com;
 
     location / {
-        proxy_pass http://127.0.0.1:8000;
+        proxy_pass http://127.0.0.1:5000;
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     }
@@ -36,7 +40,18 @@ sudo unlink /etc/nginx/sites-enabled/default
 ```
 
 ```code 
+sudo nginx -t
+```
+```code
+sudo systemctl restart nginx
+```
+
+```code 
 sudo nginx -s reload
+```
+
+```code 
+cd /home/rabbi
 ```
 
 ```code 
@@ -44,13 +59,15 @@ sudo apt install python3
 ```
 
 ```code 
-sudo apt install python3-pip
+python3 -m venv venv
 ```
 
 ```code 
-cd /home/rabbi
+source venv/bin/activate
 ```
-
+```code 
+pip install -r requirements.txt
+```
 ```code 
 sudo apt install gunicorn3
 ```

@@ -1,5 +1,5 @@
 ```code
-ssh root@IP_Address -p Port_Number
+ssh root@IP_Address -p 22
 ```
 
 ```code 

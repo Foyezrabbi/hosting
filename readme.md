@@ -85,3 +85,6 @@ pkill gunicorn3 #to kill all gunicorn3
 ```code
 sudo fuser -k 8000/tcp  #to kill the port
 ```
+```code
+sudo ufw allow 8000
+```

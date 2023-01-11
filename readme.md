@@ -74,6 +74,9 @@ sudo apt install gunicorn3
 ```code 
 sudo gunicorn3 --workers=3 run:app
 ```
+```code
+sudo gunicorn3 --bind 0.0.0.0:8000 --workers=3 run:app
+```
 
 ```code
 pkill gunicorn3 #to kill all gunicorn3

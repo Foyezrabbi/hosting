@@ -75,3 +75,10 @@ sudo apt install gunicorn3
 sudo gunicorn3 --workers=3 run:app
 ```
 
+```code
+pkill gunicorn3 #to kill all gunicorn3
+```
+
+```code
+sudo fuser -k 8000/tcp  #to kill the port
+```

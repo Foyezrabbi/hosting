@@ -88,3 +88,9 @@ sudo fuser -k 8000/tcp  #to kill the port
 ```code
 sudo ufw allow 8000
 ```
+```code
+nohup /path/to/test.py &
+```
+```code
+ps ax | grep test.py
+```

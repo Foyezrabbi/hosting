@@ -94,3 +94,7 @@ nohup /path/to/test.py &
 ```code
 ps ax | grep test.py
 ```
+```code
+sudo killall {processName = python}
+```
+
